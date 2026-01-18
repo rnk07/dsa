@@ -17,5 +17,5 @@ function uniqueIdentifier(nums) {
     return -1
 }
 
-let nums = [20,  5, 5, 20, 30]
+let nums = [20,  5, 5, 20 ,30,30]
 console.log(uniqueIdentifier(nums))
