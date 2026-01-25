@@ -1,34 +1,34 @@
-function merge(arr,left,mid, right){
+function merge(arr, left, mid, right) {
 
     let tempArr = []
     let l = left
-    let r = mid+1
-    
-    while(l <= mid && r  <= right){
+    let r = mid + 1
 
-        if(arr[l] <= arr[r]){
+    while (l <= mid && r <= right) {
+
+        if (arr[l] <= arr[r]) {
             tempArr.push(arr[l])
             l++
-        }else{
+        } else {
             tempArr.push(arr[r])
             r++
         }
 
     }
 
-    while(l <= mid){
+    while (l <= mid) {
         tempArr.push(arr[l])
         l++
     }
 
-    while(r <= right){
+    while (r <= right) {
         r++
     }
 
 
-    for(let i =0;i <tempArr.length;i++){
+    for (let i = 0; i < tempArr.length; i++) {
 
-        arr[left+i] = tempArr[i]
+        arr[left + i] = tempArr[i]
     }
 
 
@@ -43,21 +43,21 @@ function merge(arr,left,mid, right){
 
 
 
-function sort(arr,left=0, right =arr.length-1){
+function sort(arr, left = 0, right = arr.length - 1) {
 
-    if(left >= right) return
+    if (left >= right) return
 
-    let mid = Math.floor((left+right)/2)
+    let mid = Math.floor((left + right) / 2)
 
-    sort(arr,left,mid)
-    sort(arr,mid+1,right)
-    merge(arr,left,mid,right)
+    sort(arr, left, mid)
+    sort(arr, mid + 1, right)
+    merge(arr, left, mid, right)
 
-return arr
+    return arr
 
 }
 
 
 
-let arr = [4,8,1,4,0,3]
+let arr = [-12, 11, -13, -5, 6, -7, 5, -3, -6, 0];
 console.log(sort(arr))
