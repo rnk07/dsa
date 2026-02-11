@@ -1,6 +1,6 @@
 package leetCode.javaProblems;
 
-class test {
+class prac3 {
 
     String n = "ronak";
 
@@ -9,14 +9,13 @@ class test {
         this.n = n;
     }
 
-}
 
-public class prac3 {
+
+
     public static void main(String[] args) {
 
         prac2 p = new prac2();
         p.D();
 
     }
-
 }
