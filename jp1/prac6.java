@@ -1,4 +1,4 @@
-package leetCode.javaProblems;
+package leetCode.jp1;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package leetCode.javaProblems;
+package leetCode.jp1;
 
 public class prac26 {
     static boolean checkPangram(String s) {

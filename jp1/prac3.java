@@ -1,4 +1,4 @@
-package leetCode.javaProblems;
+package leetCode.jp1;
 
 class prac3 {
 
